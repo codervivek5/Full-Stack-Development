@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+}
+
+/* #27282D */
+
+
+.main {
+    background-color: #27282D;
+    width: 100%;
+    height: 60px;
+    /* border: 2px solid red; */
+
+    /* make elements horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main .clr {
+    color: white;
+}
+
+.main .logo {
+
+    /* border: 2px solid rgb(51, 255, 0); */
+
+}
+
+.main .logo h1 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+
+.main .menu {
+
+    /* border: 2px solid rgb(0, 162, 255); */
+
+    display: flex;
+    gap: 65px;
+    font-family: Arial, Helvetica;
+
+}
+
+.main .button {
+
+    /* border: 2px solid #0096B7; */
+
+    background-color: #0096B7;
+    font-family: Arial;
+    padding: 8px 18px;
+    border-radius: 85px;
+
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.first .btn{ 
+    /*  T R B L  */
+    margin:250px 0px 0px 0px ; 
+    border: 2px solid salmon;
+    padding:10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}

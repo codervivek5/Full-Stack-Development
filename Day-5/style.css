@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* 
+h1{
+    font-size: 50px;
+    color: brown;
+    border: 2px solid red;
+}
+
+h2{
+    color: blue;
+}
+
+#ramu{
+    font-size: 70px;
+    color: chartreuse;
+}
+
+.A2{
+    font-size: 70px;
+    color: red; 
+}
+  */
+
+.first {
+    border: 2px solid brown;
+    height: 100px;
+    /* width: 100px; */
+    background-color: aquamarine;
+}
+
+p{
+    border: 2px solid brown;
+    height: 100px;
+    /* width: 100px; */
+    background-color: blueviolet;
+}
+
+.qn{
+    display: flex;
+    flex-direction: column;
+}
