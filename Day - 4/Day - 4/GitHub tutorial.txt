@@ -1,7 +1,0 @@
-git -  version control system (CLI - command line tool)
-
-
-
-github - 
-Bitbucket - 
-
