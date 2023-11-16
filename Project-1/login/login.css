@@ -3,13 +3,22 @@
     padding: 0px;
     box-sizing: border-box;
     /* overflow: hidden; */
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; background: linear-gradient(to right, rgba(248, 169, 255, 0.966), #b3f4ff), linear-gradient(to bottom,  #b3f4ff, rgba(248, 169, 255, 0.966));
 }
 
 .container {
-    /* border: 2px solid rebeccapurple; */
-    margin: 50px;
-
-    display: flex;
+    border: 2px solid black;
+    width: 63%;
+    margin-top: 80px;
+    display: flex;  
     height: 450px;
     border-radius: 25px;
     background-color: rgb(189, 215, 255);
@@ -19,23 +28,36 @@
 
 /* this is lefty section area */
 .container .left {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
+    background-color: purple;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .container .left img {
-    width: 35%;
+    margin-top: 70px;
+    width: 80%;
 }
+
+.container .left p {
+    text-align: center;
+    margin: 30px 40px;
+    color: white;
+    font-family: 'Lato';
+    /* width: 35%; */
+}
+
+
 
 /* this is right section area */
 
 
 .container .right {
 
-    border: 2px solid rgb(200, 255, 0);
+    /* border: 2px solid rgb(200, 255, 0); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,11 +98,11 @@
     width: 40%;
     justify-content: space-between;
     color: purple;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .container .right .extraLinks a {
-    
+
     text-decoration: none;
     color: purple;
 }
@@ -88,6 +110,6 @@
 
 .container .right .extraLinks .remember .checkbox {
 
-    border:2px solid red;
+    border: 2px solid red;
 
 }
