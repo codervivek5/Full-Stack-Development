@@ -1,39 +1,52 @@
-/* costume google font  */
-
+/* Custom Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-
-
+/* Root Variables */
 :root {
     --primaryColor: #141119;
     --white: #fafafa;
     --textColor: #f9c90b;
-    --hoverColor:#3638d7;
+    --hoverColor: #3638d7;
 }
 
-body{
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Body Styling */
+body {
+    font-family: 'Nunito', sans-serif;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px #c7c7c7;
+}
 
+/* Navbar Logo Styling */
+.navbar a img {
+    width: 9%;
+    position: relative;
+    left: 20%;
+}
 
-#navbar ul {
+/* Navbar Menu Styling */
+.navbar .menus ul {
     display: flex;
     gap: 30px;
     text-decoration: none;
     list-style: none;
-
+    margin: 0;
 }
 
-
-#navbar ul a {
+/* Navbar Menu Item Styling */
+.menus ul a {
     text-decoration: none;
-
-}
-
-#navbar ul a {
     color: var(--primaryColor);
     font-weight: bold;
-    font-family: 'Nunito', sans-serif;
+}
+
+/* Navbar Menu Hover Styling */
+.menus ul a:hover {
+    color: var(--hoverColor);
 }
