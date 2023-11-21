@@ -1,0 +1,39 @@
+/* costume google font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+
+:root {
+    --primaryColor: #141119;
+    --white: #fafafa;
+    --textColor: #f9c90b;
+    --hoverColor:#3638d7;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+#navbar ul a {
+    text-decoration: none;
+
+}
+
+#navbar ul a {
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
