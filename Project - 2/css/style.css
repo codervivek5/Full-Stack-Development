@@ -9,19 +9,31 @@
     --hoverColor: #3638d7;
 }
 
-/* Body Styling */
+/* Body Styling with Background Image */
+
 body {
     font-family: 'Nunito', sans-serif;
+    background-image: url('../img/bg.png'); 
+
+    
+    background-size: cover; 
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    
 }
+
 
 /* Navbar Styling */
 .navbar {
     display: flex;
     height: 70px;
+    background-color: var(--white);
     justify-content: space-around;
     align-items: center;
-    box-shadow: 1px 1px 5px 1px #c7c7c7;
+    box-shadow: 1px 1px 3px 1px #c7c7c7;
+
 }
+
 
 /* Navbar Logo Styling */
 .navbar a img {
@@ -49,4 +61,43 @@ body {
 /* Navbar Menu Hover Styling */
 .menus ul a:hover {
     color: var(--hoverColor);
+    text-shadow: 2px 2px 3px rgb(211, 189, 189);
+    text-decoration: underline;
+
 }
+
+
+/* ---------main container---- */
+.right img{
+width: 25%;
+border-radius: 50%;
+box-shadow: 1px 1px 3px 1px #aaaaaa;
+}
+
+/* button code */
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
