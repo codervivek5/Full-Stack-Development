@@ -1,0 +1,17 @@
+computer language()
+
+- datatype / variable
+- input in java
+- conditions (questions)
+- loops - (pattern)
+- functions
+
+questions:-
+
+--- OOPS(object oriended programming system)---
+4 pillars
+
+1. Inharitence
+2. Polymorphism
+3. Abstraction
+4. Encapulation
