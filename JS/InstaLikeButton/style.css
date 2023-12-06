@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    height: 320px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container .top-row {
+    /* border: 2px solid red; */
+    display: flex;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container .top-row img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+
+}
+
+.container .top-row .username {
+    color: gray;
+    margin-left: 10px;
+
+}
+
+.container .top-row .username h3 {
+    font-size: medium;
+}
+
+.container .top-row .username h4 {
+    font-size: small;
+}
+
+
+#post-img {
+
+    height: 250px;
+    width: 250px;
+    object-fit: fill;
+    object-position: center;
+    padding: 20px;
+}
+
+
+.like {
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    width: 18%;
+}
+
+.like i {
+    font-size: 30px;
+}
