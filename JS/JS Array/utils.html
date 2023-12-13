@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #inputText, #outputText {
+            width: 100%;
+            min-height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        #charCount {
+            margin-top: 5px;
+            color: #555;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Text Utility</h1>
+
+    <label for="inputText">Enter Text:</label>
+    <p id="inputText" contenteditable="true" placeholder="Type or paste your text here..."></p>
+    <div id="charCount">Character Count: 0</div>
+
+    <div>
+        <button onclick="transformText('uppercase')">Uppercase</button>
+        <button onclick="transformText('lowercase')">Lowercase</button>
+        <button onclick="transformText('capitalize')">Capitalize</button>
+        <button onclick="transformText('reverse')">Reverse</button>
+    </div>
+
+    <p id="outputText"></p>
+
+    <script>
+        var inputText = document.getElementById('inputText');
+        var charCount = document.getElementById('charCount');
+
+        inputText.addEventListener('input', function () {
+            var count = inputText.textContent.length;
+            charCount.textContent = 'Character Count: ' + count;
+        });
+
+        function transformText(operation) {
+            var inputTextContent = inputText.textContent;
+            var outputText = document.getElementById('outputText');
+
+            switch (operation) {
+                case 'uppercase':
+                    outputText.textContent = inputTextContent.toUpperCase();
+                    break;
+                case 'lowercase':
+                    outputText.textContent = inputTextContent.toLowerCase();
+                    break;
+                case 'capitalize':
+                    outputText.textContent = inputTextContent.replace(/\b\w/g, function (char) {
+                        return char.toUpperCase();
+                    });
+                    break;
+                case 'reverse':
+                    outputText.textContent = inputTextContent.split('').reverse().join('');
+                    break;
+                default:
+                    outputText.textContent = inputTextContent;
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>

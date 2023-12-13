@@ -6,37 +6,27 @@
 
 // unshift - add element at the begining of array
 // shift - remove element at the begining of array
-// iteration - 
+// iteration - done (for,forEack)
 // delete
 // slice
-// toString
+// toString - done
 
 
-var ureee = [70,80,85,17,12,99];
+// var ureee = [70,80,85];
 
-ureee[0] = "Ramu"
-ureee[2] = "dahi bada"
+//  0 --------array.lengh
 
-
-
-// ureee.forEach(elem => {
-
-//     document.write(elem , ", ")
-    
-// });
-
-// for(let i = 0 ;  i < ureee.length ; i++){
-
-//     document.write(ureee[i], " ")
-
+// for(var w = 0 ; w < ureee.length ; w++ ){
+//     console.log(ureee[w])
 // }
 
-// Array  - Class
+// ureee.forEach(temp => { console.log(temp) })
 
 
-// you need to use any class or there element or method or function or anything else 
-// firstly you need to create an object of that perticular class then use that via object name 
-// var ureee = new Array(2,3,45,6);
+const ureee = [70,80,85];
+
+ureee.pop()
 
 
 
+// var let const
